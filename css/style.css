@@ -1,19 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  scroll-behavior: smooth;
 }
 
-a{
-    text-decoration: none;
-    color: #ffffff;
+body {
+  background-color: #0f172a;
 }
 
-.container{
-    width: 65%;
-    margin: 0px auto;
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
+
+.container {
+  width: 65%;
+  margin: 0px auto;
+}
+
+p {
+  color: rgba(148, 163, 184, 0.9);
+}
+
+p span {
+  color: #ffffff;
+}
+
+hr {
+  background: linear-gradient(90deg, #0f172a 0%, #727272 50%, #0f172a 100%);
+  border: none;
+  height: 1px;
+}
+
+hr.green {
+  border: none;
+  height: 5px;
+  width: 50px;
+  background: #329980;
+  margin: 0px auto;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #ccd6f6;
+  font-size: 1.9rem;
+  margin-top: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigacija */
+
+#navigacija {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-block > a > img {
+  height: 100px;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+#nav-menu ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 30px;
+}
+
+li a span {
+  color: #329980;
+}
+
+#main-section-wrapper {
+  height: 80vh;
+}
+
+#main-left h1 {
+  font-size: 4rem;
+  color: #ccd6f6;
+  margin-bottom: 10px;
+}
+
+#main-left h1 span {
+  color: #0f172a;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+#main-left h3 {
+  font-size: 1.5rem;
+  color: #ccd6f6;
+  margin-bottom: 40px;
+}
+
+#button-wrapper a:first-child {
+  color: #329980;
+  border: 1px solid #329980;
+  border-radius: 5px;
+  padding: 17px 12px;
+  font-size: 1.2rem;
+}
+
+#button-wrapper a:nth-child(2) {
+  border: 1px solid rgba(50, 153, 128, 0.7);
+  background: rgba(50, 153, 128, 0.7);
+  border-radius: 5px;
+  padding: 17px 12px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+#main-left,
+#main-right {
+  width: 50%;
+}
+
+#main-right {
+  background-image: url("../img/Ellipse.png");
+  background-size: cover;
+}
+
+#main-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* About me */
+
+#about-left {
+  width: 40%;
+}
+
+#about-right {
+  width: 50%;
+  background-image: url("../img/Ellipse.png");
+  background-size: cover;
+  height: 500px;
+}
+
+#about-left h2 {
+  font-weight: 400;
+}
+
+#about-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-left > * {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#about-left h2,
+#about-left p {
+  display: block;
+}
+
+#about-left h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+#about-left p {
+  margin-bottom: 50px;
+  width: 93%;
+}
+
+#about-left img {
+  width: 320px;
+  padding: 11px;
+  border: 1px solid #329980;
+  border-radius: 15px 50px;
+}
+
+#skills {
+  display: flex;
+  gap: 50px;
+}
+
+#about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skills h3,
+#skills i {
+  font-size: 1.5rem;
+  color: #329980;
+  display: block;
+  text-align: center;
+}
+
+#skills i {
+  font-size: 4rem;
+}
+
+#skills h3 {
+  margin-top: 10px;
+}
+
+.skills-col {
+  border: 1px solid #329980;
+  width: 150px;
+  padding: 10px 0px;
+  border-radius: 15px;
+}
+
+.info-me-col {
+  text-align: center;
+}
+
+.info-me-col h2 {
+  color: #fff;
+  font-weight: 400;
+}
+
+#info-me {
+  display: flex;
+  gap: 30px;
+}
+
+/* Services */
+
+#services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-image: url("../img/Ellipse.png");
+  background-position: center center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+
+.services-col {
+  width: 26.5%;
+  border-radius: 10px;
+  background: rgba(49, 71, 89, 0.7);
+  text-align: center;
+  padding: 40px 22px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.services-col h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.services-col i {
+  color: #329980;
+  font-size: 4rem;
+}
+
+.services-col p {
+  color: #ccd6f6;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Projects */
