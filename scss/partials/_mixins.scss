@@ -1,0 +1,23 @@
+@mixin pozicioniranje($js:space-between, $ai:center, $fd:row){
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin gap($gap:30px){
+    display: flex;
+    gap: $gap;
+}
+
+@mixin btn(){
+    border-radius: 5px;
+    padding: 17px 12px;
+    font-size: 1.2rem;
+}
+
+@mixin bgglow(){
+    background-image: url("../img/Ellipse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

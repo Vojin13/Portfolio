@@ -1,0 +1,45 @@
+#main-section-wrapper{
+    @include pozicioniranje();
+    height: 80vh;
+    #main-left{
+        width: 50%;
+        h1{
+            font-size: 4rem;
+            color: #ccd6f6;
+            margin-bottom: 10px;
+            span{
+                color: #0f172a;
+                -webkit-text-stroke-width: 1;
+                -webkit-text-stroke-color: #fff;
+                text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+                    1px 1px 0 #fff;
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+            color: #ccd6f6;
+            margin-bottom: 40px;
+        }
+        #button-wrapper{
+            
+            a{
+                &:first-child {
+                    @include btn();
+                    color: $green;
+                    border: 1px solid $green;
+                }
+                &:last-child {
+                    @include btn();
+                    background-color: rgba($green,.7);
+                    border: 1px solid rgba($green,.7);
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    #main-right{
+        width: 50%;
+        @include pozicioniranje(center);
+        @include bgglow();
+    }
+}

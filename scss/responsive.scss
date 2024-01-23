@@ -1,0 +1,143 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+
+@media screen and (max-width: 1654px){
+    .container{
+        width: 70%;
+    }
+    #main-right{
+        img{
+            width: 70%;
+        }
+    }
+    #main-section-wrapper #main-left{
+        h1{
+            font-size: 3.5rem;
+        }
+    }
+    #about-me-wrapper #about-right{
+        justify-content: center;
+        width: 50%;
+         #skills{
+        .skills-col{
+            width: 40%;
+            }
+        }
+    }
+    #services-wrapper{
+        .services-col{
+            width: 30%;
+            height: 410px;
+            h2{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .container{
+        width: 80%;
+    }
+    #main-section-wrapper #main-left{
+        h1{
+            font-size: 3.5rem;
+        }
+        width: 70%;
+    }
+    #about-me-wrapper #about-right{
+        background-image: none;
+    }
+    #about-me-wrapper #about-left{
+        p{
+            width: 100%;
+        }
+    }
+    #services-wrapper{
+        .services-col{
+            height: 200px;
+            h2{
+                font-size: 1.3rem;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:935px){
+    #main-section-wrapper #main-left{
+        h1{
+            font-size: 3rem;
+        }
+        width: 90%;
+        #button-wrapper{
+            a{
+                &:first-child{
+                    font-size: 1rem;
+                }
+                &:last-child{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    #about-me-wrapper{
+        @include pozicioniranje(center,center,column);
+        #about-left,#about-right{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 775px){
+    #navigacija{
+        @include pozicioniranje(space-between,center,column);
+    }
+    #main-section-wrapper{
+        height: 75vh;
+        #main-right{
+            display: none;
+        }
+        #main-left{
+            width: 100%;
+            @include pozicioniranje(center,center,column);
+            #button-wrapper{
+                a{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    #services-wrapper{
+        .services-col{
+            height: 160px;
+            width: 31%;
+            h2{
+                font-size: 1.05rem;
+            }
+            i{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #navigacija{
+        #nav-menu{
+            li{
+                a{
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

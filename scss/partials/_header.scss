@@ -1,0 +1,25 @@
+#navigacija{
+    @include pozicioniranje();
+    #logo-block{
+        width: 100px;
+        a{
+            img{
+                width: 100px;
+            }
+        }
+    }
+    #nav-menu{
+        ul{
+            @include gap();
+            list-style-type: none;
+            font-size: 1.3rem;
+            li{
+                a{
+                    span{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

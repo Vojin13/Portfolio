@@ -1,0 +1,66 @@
+#about-me-wrapper{
+    @include pozicioniranje();
+    #about-left{
+        @include pozicioniranje(center,center,column);
+        width: 40%;
+        h2{
+            color: $secondary;
+        }
+        *{
+            text-align: center;
+            margin: 10px auto;
+        }
+        p{
+            width: 90%;
+        }
+        img{
+            width: 320px;
+            padding: 11px;
+            border: 1px solid $green;
+            border-radius: 15px 50px;
+        }
+    }
+    #about-right{
+        @include pozicioniranje(center,center, column);
+        @include bgglow();
+        background-position: center center;
+        height: 500px;
+        #skills{
+            @include gap(15px);
+            justify-content: center;
+            width: 100%;
+            margin: 0px auto;
+            flex-wrap: wrap;
+            h3,i{
+                font-size: 1.5rem;
+                color: $green;
+                display: block;
+                text-align: center;
+            }
+            i{
+                font-size: 4rem;
+            }
+            h3{
+                margin-top: 10px;
+            }
+            .skills-col{
+                border: 1px solid $green;
+                width: 150px;
+                padding: 10px 0px;
+                border-radius: 15px;
+            }
+            margin-bottom: 50px;
+        }
+        #info-me{
+            @include gap(30px);
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            .info-me-col h2{
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    margin-bottom: 7px;
+            }
+        }
+    }
+}

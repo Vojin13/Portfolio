@@ -1,196 +1,113 @@
-@media screen and (max-width: 1503px) {
-  #main-left h1 {
-    font-size: 3rem;
-  }
-  #nav-menu ul li a {
-    font-size: 1.2rem;
-  }
-  #main-section-wrapper {
-    height: 60vh;
-  }
-  #main-right img {
-    width: 80%;
-  }
-  #button-wrapper a:first-child,
-  #button-wrapper a:nth-child(2) {
-    font-size: 1rem;
-  }
-  #about-me-wrapper img {
+@media screen and (max-width: 1654px) {
+  .container {
     width: 70%;
   }
-  #skills i {
+  #main-right img {
+    width: 70%;
+  }
+  #main-section-wrapper #main-left h1 {
     font-size: 3.5rem;
   }
-  #skills h3 {
-    font-size: 1.3rem;
+  #about-me-wrapper #about-right {
+    justify-content: center;
+    width: 50%;
   }
-  #skills {
-    gap: 20px;
-  }
-  #about-right {
-    background-image: none;
-  }
-
-  #services-wrapper {
-    flex-wrap: wrap;
-    background-size: 100%;
-  }
-
-  .services-col {
+  #about-me-wrapper #about-right #skills .skills-col {
     width: 40%;
   }
-
-  .services-col:nth-child(3) {
-    margin: 0px auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
+  #services-wrapper .services-col {
+    width: 30%;
+    height: 410px;
+  }
+  #services-wrapper .services-col h2 {
+    font-size: 1.4rem;
   }
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .container {
     width: 80%;
   }
-  #main-section-wrapper.flex {
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
-    height: 60vh;
-  }
-  #main-left {
-    width: 67%;
-  }
-  #about-me-wrapper {
-    flex-direction: column;
-  }
-  #about-left {
+  #main-section-wrapper #main-left {
     width: 70%;
   }
-  #about-left img {
-    width: 65%;
+  #main-section-wrapper #main-left h1 {
+    font-size: 3.5rem;
   }
-  #about-right {
-    height: fit-content;
-    margin-bottom: 50px;
+  #about-me-wrapper #about-right {
+    background-image: none;
+  }
+  #about-me-wrapper #about-left p {
+    width: 100%;
+  }
+  #services-wrapper .services-col {
+    height: 200px;
+  }
+  #services-wrapper .services-col h2 {
+    font-size: 1.3rem;
+  }
+  #services-wrapper .services-col p {
+    display: none;
   }
 }
-
-@media screen and (max-width: 800px) {
-  #navigacija {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 935px) {
+  #main-section-wrapper #main-left {
+    width: 90%;
   }
-  #logo-block {
-    width: 100px;
-  }
-  #main-right {
-    display: none;
-  }
-  #main-left {
-    width: 100%;
-    text-align: center;
-  }
-  #button-wrapper a:nth-child(2) {
-    display: none;
-  }
-  #services-wrapper {
-    flex-direction: column;
-  }
-  .services-col {
-    width: 70%;
-    margin: 20px auto;
-  }
-  .services-col:nth-child(3) {
-    margin: 20px auto;
-    margin-bottom: 50px;
-  }
-  #about-right {
-    width: 100%;
-  }
-  #skills {
-    gap: 10px;
-  }
-  .services-col i {
+  #main-section-wrapper #main-left h1 {
     font-size: 3rem;
+  }
+  #main-section-wrapper #main-left #button-wrapper a:first-child {
+    font-size: 1rem;
+  }
+  #main-section-wrapper #main-left #button-wrapper a:last-child {
+    font-size: 1rem;
+  }
+  #about-me-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about-me-wrapper #about-left, #about-me-wrapper #about-right {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 775px) {
+  #navigacija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main-section-wrapper {
+    height: 75vh;
+  }
+  #main-section-wrapper #main-right {
+    display: none;
+  }
+  #main-section-wrapper #main-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main-section-wrapper #main-left #button-wrapper a:last-child {
+    display: none;
+  }
+  #services-wrapper .services-col {
+    height: 160px;
+    width: 31%;
+  }
+  #services-wrapper .services-col h2 {
+    font-size: 1.05rem;
+  }
+  #services-wrapper .services-col i {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 600px) {
-  .container {
-    width: 90%;
-  }
-  #navigacija {
-    width: 100%;
-  }
-  #nav-menu a span {
+  #navigacija #nav-menu li a span {
     display: none;
   }
-  #nav-menu ul {
-    gap: 12px;
-  }
-  #main-left h1 {
-    font-size: 2.5rem;
-  }
-  #main-left h3 {
-    font-size: 1.3rem;
-  }
-  #main-section-wrapper {
-    height: 30vh;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  #about-left {
-    width: 85%;
-  }
-  #skills {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .services-col {
-    padding: 40px 15px;
-  }
-  .services-col i {
-    font-size: 2.5rem;
-  }
-  .services-col:first-child {
-    margin-top: -20px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #nav-menu ul {
-    flex-direction: column;
-    gap: 5px;
-  }
-  #main-left h1 {
-    font-size: 2rem;
-  }
-  #main-left h3 {
-    font-size: 1.1rem;
-  }
-  #button-wrapper a:first-child {
-    font-size: 0.8rem;
-  }
-  #main-left {
-    height: 25vh;
-  }
-  .services-col h2 {
-    font-size: 1.1rem;
-  }
-  .services-col p {
-    font-size: 0.7rem;
-  }
-  #about-left {
-    width: 100%;
-  }
-  #skills h3 {
-    font-size: 1rem;
-  }
-  #skills i {
-    font-size: 2.5rem;
-  }
-  #info-me {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+}/*# sourceMappingURL=responsive.css.map */
