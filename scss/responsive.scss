@@ -202,3 +202,44 @@
         }
     }
 }
+
+@media screen and (max-width: 350px) {
+    .container{
+        width: 90%;
+    }
+    #navigacija{
+        #nav-menu{
+            ul{
+                gap: 10px;
+            }
+        }
+    }
+    
+    #main-section-wrapper{
+        height: 70vh;
+        #main-left{
+
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container{
+        width: 100%;
+    }
+    #navigacija{
+        #nav-menu{
+            ul{
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+    
+    #main-section-wrapper{
+        height: 50vh;
+        #main-left{
+
+        }
+    }
+}

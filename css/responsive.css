@@ -149,4 +149,27 @@
   #services-wrapper .services-col:nth-child(2) {
     margin: 20px 0px;
   }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    width: 90%;
+  }
+  #navigacija #nav-menu ul {
+    gap: 10px;
+  }
+  #main-section-wrapper {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container {
+    width: 100%;
+  }
+  #navigacija #nav-menu ul {
+    gap: 10px;
+    flex-direction: column;
+  }
+  #main-section-wrapper {
+    height: 50vh;
+  }
 }/*# sourceMappingURL=responsive.css.map */
