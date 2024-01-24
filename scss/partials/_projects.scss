@@ -1,0 +1,43 @@
+#projects-wrapper{
+    @include pozicioniranje(space-between, center, column);
+    @include bgglow();
+    background-size: 60%;
+    background-position: center center;
+    .projects-row{
+        width: 100%;
+        @include pozicioniranje();
+        &:last-child{
+            .item{
+                .langs{
+                    .lang{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .item{
+            @include pozicioniranje(center,center,column);
+            img{
+                max-width: 520px;
+                border-radius: 10px;
+                margin-bottom: 25px;
+            }
+            .langs{
+                @include gap(15px);
+                justify-content: center;
+                .lang{
+                    background-color: rgba($green, 0.35);
+                    border-radius: 35px;
+                    margin-bottom: 50px;
+                    
+                    
+                    p{
+                        color: #43CCAB;
+                        padding: 10px 20px;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+}

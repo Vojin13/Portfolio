@@ -22,6 +22,12 @@
   #services-wrapper .services-col h2 {
     font-size: 1.4rem;
   }
+  #projects-wrapper .projects-row {
+    width: 100%;
+  }
+  #projects-wrapper .projects-row .item img {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 1250px) {
   .container {
@@ -70,6 +76,15 @@
   }
   #about-me-wrapper #about-left, #about-me-wrapper #about-right {
     width: 85%;
+  }
+  #projects-wrapper .projects-row {
+    flex-direction: column;
+  }
+  #projects-wrapper .projects-row:last-child .item:first-child .langs .lang {
+    margin-bottom: 50px;
+  }
+  #projects-wrapper .projects-row .item img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 775px) {
@@ -160,6 +175,19 @@
   #main-section-wrapper {
     height: 70vh;
   }
+  #projects-wrapper .projects-row {
+    width: 100%;
+  }
+  #projects-wrapper .projects-row .item img {
+    width: 80%;
+  }
+  #projects-wrapper .projects-row .item .langs {
+    gap: 5px;
+  }
+  #projects-wrapper .projects-row .item .langs .lang p {
+    font-size: 0.75rem;
+    padding: 7px 15px;
+  }
 }
 @media screen and (max-width: 300px) {
   .container {
@@ -171,5 +199,20 @@
   }
   #main-section-wrapper {
     height: 50vh;
+  }
+  #main-section-wrapper #main-left h1 {
+    font-size: 1.8rem;
+  }
+  #main-section-wrapper #main-left h3 {
+    font-size: 1rem;
+  }
+  #about-me-wrapper #about-right #skills .skills-col h3 {
+    font-size: 0.8rem;
+  }
+  #about-me-wrapper #about-right #info-me {
+    flex-direction: column;
+  }
+  #about-me-wrapper #about-left {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=responsive.css.map */

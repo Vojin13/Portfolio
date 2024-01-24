@@ -189,6 +189,54 @@
   font-size: 0.9rem;
 }
 
+#projects-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/Ellipse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+}
+#projects-wrapper .projects-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#projects-wrapper .projects-row:last-child .item .langs .lang {
+  margin-bottom: 0px;
+}
+#projects-wrapper .projects-row .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#projects-wrapper .projects-row .item img {
+  max-width: 520px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+#projects-wrapper .projects-row .item .langs {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+#projects-wrapper .projects-row .item .langs .lang {
+  background-color: rgba(50, 153, 128, 0.35);
+  border-radius: 35px;
+  margin-bottom: 50px;
+}
+#projects-wrapper .projects-row .item .langs .lang p {
+  color: #43CCAB;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
 * {
   margin: 0px;
   padding: 0px;

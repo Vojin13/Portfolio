@@ -34,6 +34,14 @@
             }
         }
     }
+    #projects-wrapper{
+        .projects-row{
+            width: 100%;
+            .item img{
+                width: 95%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1250px){
@@ -88,6 +96,27 @@
         @include pozicioniranje(center,center,column);
         #about-left,#about-right{
             width: 85%;
+        }
+    }
+    #projects-wrapper{
+        .projects-row{
+            flex-direction: column;
+            &:last-child{
+                .item{
+                    &:first-child{
+                        .langs{
+                            .lang{
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+            .item{ 
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -217,10 +246,23 @@
     
     #main-section-wrapper{
         height: 70vh;
-        #main-left{
-
+    }
+    #projects-wrapper{
+        .projects-row{
+            width: 100%;
+            .item img{
+                width: 80%;
+            }
+            .item .langs{
+                gap: 5px;
+                .lang p{
+                    font-size: 0.75rem;
+                    padding: 7px 15px;
+                }
+            }
         }
     }
+    
 }
 
 @media screen and (max-width: 300px) {
@@ -239,7 +281,31 @@
     #main-section-wrapper{
         height: 50vh;
         #main-left{
-
+            h1{
+                font-size: 1.8rem;
+            }
+            h3{
+                font-size: 1rem;
+            }
         }
     }
+
+    #about-me-wrapper{
+        #about-right{
+            #skills{
+                .skills-col{
+                    h3{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            #info-me{
+                flex-direction: column;
+            }
+        }
+        #about-left{
+            margin-bottom: 50px;
+        }
+    }
+
 }
