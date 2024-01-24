@@ -252,9 +252,95 @@
             <h2>Contact</h2>
             <hr class="green" />
           </div>
-          <div id="contact-wrapper"></div>
+          <div id="contact-wrapper">
+            <div id="contact-left">
+              <div id="form-wrapper">
+                <form action="obrada.php" method="GET">
+                  <div id="form-row">
+                    <input
+                      type="text"
+                      name="Name"
+                      id="Name"
+                      placeholder="First name"
+                    />
+                    <input
+                      type="text"
+                      name="Surname"
+                      id="Surname"
+                      placeholder="Last name"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="Email"
+                    placeholder="Email address"
+                  />
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter your message..."
+                  ></textarea>
+                  <input type="submit" value="Send" id="submit" name="submit" />
+                </form>
+              </div>
+            </div>
+            <div id="contact-right">
+              <div id="contact-right-wrapper">
+                <div class="contact-info">
+                  <p>
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vojin.konatarevic.32.23@ict.edu.rs"
+                      target="_blank"
+                      ><span><i class="fa-solid fa-envelope"></i></span>
+                      vojin.konatarevic.32.23@ict.edu.rs</a
+                    >
+                  </p>
+                </div>
+
+                <div class="contact-info">
+                  <p>
+                    <a href="tel:+381 62 1700623"
+                      ><span><i class="fa-solid fa-phone"></i></span> +381 62
+                      1700333</a
+                    >
+                  </p>
+                </div>
+
+                <div class="contact-info">
+                  <p>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    Zdravka Čelara 16, Beograd
+                  </p>
+                </div>
+                <div id="social-links">
+                  <a href="https://github.com/Vojin13/Portfolio" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+
+                  <a href="https://www.linkedin.com/" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <hr />
+        <p>
+          &copy; 2024 Design & Development: Vojin Konatarević <br />
+          All rights reserved.
+        </p>
+      </footer>
     </main>
   </body>
 </html>

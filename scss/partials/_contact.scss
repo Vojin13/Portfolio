@@ -1,0 +1,74 @@
+#contact-wrapper{
+    @include pozicioniranje();
+    width: 100%;
+    #contact-left{
+        width: 45%;
+        #form-wrapper form{
+            @include pozicioniranje(center,center, column);
+            #form-row{
+                width: 100%;
+                @include pozicioniranje();
+                input{
+                    @include inputStyle();
+                    width: 47%;
+                }
+            }
+            input[type="email"]{
+                @include inputStyle();
+                width: 100%;
+            }
+            textarea{
+                @include inputStyle();
+                height: 140px;
+                width: 100%;
+                resize: none;
+            }
+            input[type="submit"]{
+                @include inputStyle();
+                cursor: pointer;
+                width: 40%;
+                border-color: $green;
+                font-size: 1rem;
+                &:hover{
+                    background-color: rgba($green,.7);
+                }
+            }
+        }
+    }
+    #contact-right{
+        width: 45%;
+        #contact-right-wrapper{
+            padding: 30px 10px;
+            border: 1px solid $green;
+            border-radius: 50px 15px;
+            width: 100%;
+            margin-bottom: 50px;
+            @include pozicioniranje(space-between,center,column);
+            .contact-info{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 35px;
+                p{
+                    font-size: 1rem;
+                    color: white;
+                    a{
+                        display: inline-block;
+                    }
+                    span{
+                        margin-right: 15px;
+                        font-size: 25px;
+                    }
+                }
+            }
+            #social-links{
+                @include gap(30%);
+                justify-content: center;
+                a{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+    }
+}

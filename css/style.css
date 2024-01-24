@@ -53,6 +53,11 @@
   font-size: 1.2rem;
   color: #329980;
   border: 1px solid #329980;
+  transition: all 0.5s;
+}
+#main-section-wrapper #main-left #button-wrapper a:first-child:hover {
+  color: white;
+  background-color: rgba(50, 153, 128, 0.7);
 }
 #main-section-wrapper #main-left #button-wrapper a:last-child {
   border-radius: 5px;
@@ -61,6 +66,10 @@
   background-color: rgba(50, 153, 128, 0.7);
   border: 1px solid rgba(50, 153, 128, 0.7);
   margin-left: 15px;
+  transition: all 0.5s;
+}
+#main-section-wrapper #main-left #button-wrapper a:last-child:hover {
+  background-color: #329980;
 }
 #main-section-wrapper #main-right {
   width: 50%;
@@ -235,6 +244,178 @@
   color: #43CCAB;
   padding: 10px 20px;
   font-size: 0.85rem;
+}
+
+#contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+#contact-wrapper #contact-left {
+  width: 45%;
+}
+#contact-wrapper #contact-left #form-wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact-wrapper #contact-left #form-wrapper form #form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact-wrapper #contact-left #form-wrapper form #form-row input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #CCD6F6;
+  transition: all 0.2s;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  width: 47%;
+}
+#contact-wrapper #contact-left #form-wrapper form #form-row input::-moz-placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form #form-row input::placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form #form-row input:focus {
+  box-shadow: 0 0 7px #CCD6F6;
+  transition: all 0.2s;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=email] {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #CCD6F6;
+  transition: all 0.2s;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=email]::-moz-placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=email]::placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=email]:focus {
+  box-shadow: 0 0 7px #CCD6F6;
+  transition: all 0.2s;
+}
+#contact-wrapper #contact-left #form-wrapper form textarea {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #CCD6F6;
+  transition: all 0.2s;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  height: 140px;
+  width: 100%;
+  resize: none;
+}
+#contact-wrapper #contact-left #form-wrapper form textarea::-moz-placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form textarea::placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form textarea:focus {
+  box-shadow: 0 0 7px #CCD6F6;
+  transition: all 0.2s;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=submit] {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #CCD6F6;
+  transition: all 0.2s;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 40%;
+  border-color: #329980;
+  font-size: 1rem;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=submit]::-moz-placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=submit]::placeholder {
+  color: #CCD6F6;
+  font-size: 14px;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=submit]:focus {
+  box-shadow: 0 0 7px #CCD6F6;
+  transition: all 0.2s;
+}
+#contact-wrapper #contact-left #form-wrapper form input[type=submit]:hover {
+  background-color: rgba(50, 153, 128, 0.7);
+}
+#contact-wrapper #contact-right {
+  width: 45%;
+}
+#contact-wrapper #contact-right #contact-right-wrapper {
+  padding: 30px 10px;
+  border: 1px solid #329980;
+  border-radius: 50px 15px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#contact-wrapper #contact-right #contact-right-wrapper .contact-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+#contact-wrapper #contact-right #contact-right-wrapper .contact-info p {
+  font-size: 1rem;
+  color: white;
+}
+#contact-wrapper #contact-right #contact-right-wrapper .contact-info p a {
+  display: inline-block;
+}
+#contact-wrapper #contact-right #contact-right-wrapper .contact-info p span {
+  margin-right: 15px;
+  font-size: 25px;
+}
+#contact-wrapper #contact-right #contact-right-wrapper #social-links {
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+}
+#contact-wrapper #contact-right #contact-right-wrapper #social-links a {
+  font-size: 2rem;
+}
+
+footer hr {
+  margin-bottom: 15px;
+}
+footer p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 * {

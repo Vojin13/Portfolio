@@ -21,3 +21,24 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin inputStyle(){
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $secondary;
+    transition: all 0.2s;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+
+    &::placeholder{
+        color: $secondary;
+        font-size: 14px;
+    }
+    
+    &:focus{
+        box-shadow: 0 0 7px $secondary;
+        transition: all 0.2s;
+    }
+}
