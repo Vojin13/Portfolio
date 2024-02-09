@@ -119,6 +119,7 @@
   background-image: url("../img/Ellipse.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 90%;
   background-position: center center;
   height: 500px;
 }

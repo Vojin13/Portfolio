@@ -23,6 +23,7 @@
     #about-right{
         @include pozicioniranje(center,center, column);
         @include bgglow();
+        background-size: 90%;
         background-position: center center;
         height: 500px;
         #skills{
