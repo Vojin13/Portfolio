@@ -8,13 +8,12 @@ Welcome to my personal portfolio website. This project showcases my work as a fr
 - **CSS3**
 - **Bootstrap**
 - **Sass**
-- **JavaScript**
 
 ## ✨ Features
 
 - **Responsive Design**: The portfolio is fully responsive and adapts to different screen sizes.
 - **Projects Showcase**: A section that highlights several web development projects I’ve worked on.
-- **Skills Overview**: A visual presentation of my technical skills, including HTML, CSS, JavaScript, and more.
+- **Skills Overview**: A visual presentation of my technical skills, including HTML, CSS and more.
 - **Contact Section**: A form for visitors to reach out to me directly.
 - **Smooth Scrolling**: Implemented smooth transitions for better user experience.
 
